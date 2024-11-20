@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPerformance - Peças de Alta Performance</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://js.stripe.com/v3/"></script> <!-- Stripe API -->
+</head>
+<body>
+  <header class="top-bar">
+    <h1>AutoPerformance</h1>
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Eleve sua performance!</h2>
+    <p>As melhores peças automotivas para levar sua máquina ao próximo nível.</p>
+    <button id="explorar">Explorar Agora</button>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h3>Produtos em Destaque</h3>
+    <div class="produto-card">
+      <img src="filtro.png" alt="Filtro de ar esportivo">
+      <h4>Filtro de Ar Esportivo</h4>
+      <p>R$ 299,90</p>
+      <button class="comprar-btn" data-produto="Filtro de Ar Esportivo">Comprar</button>
+    </div>
+    <div class="produto-card">
+      <img src="Pneu.jpg" alt="Pneu de Alta Performance">
+      <h4>Pneu de Alta Performance</h4>
+      <p>R$ 799,90</p>
+      <button class="comprar-btn" data-produto="Pneu de Alta Performance">Comprar</button>
+    </div>
+    <div class="produto-card">
+      <img src="oleo-motor.png" alt="Óleo Sintético Premium">
+      <h4>Óleo Sintético Premium</h4>
+      <p>R$ 119,90</p>
+      <button class="comprar-btn" data-produto="Óleo Sintético Premium">Comprar</button>
+    </div>
+  </section>
+
+  <section class="carrinho">
+    <h3>Carrinho de Compras</h3>
+    <div id="itensCarrinho">
+      <p>Seu carrinho está vazio!</p>
+    </div>
+    <button id="finalizarCompra">Finalizar Compra</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 AutoPerformance - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
